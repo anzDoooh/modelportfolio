@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<title>Model Form</title>
+</head>
+<body>
+	<h1>Fill and Submit the Contact form below</h1>
+	<form action="cform.php" method="post">
+		<label for="contact">Enter Your name</label>
+		<input type="text" name="contact" > <!--v1-->
+		<br>
+		<br>
+		<label for="cemail">Enter Your Email Addess</label>
+		<input type="email" name="cemail"> <!--v2-->
+		<br>
+		<br>
+		<label for="contact">Enter Your phone number</label>
+		<input type="tel" maxlength="10" pattern="[0-9]{10}" name="phoneno" > <!--v3-->
+		<br>
+		<br>
+		<textarea name="umessage"  cols="30" rows="10" placeholder="Enter your message here"></textarea><!--v4-->
+		<br>
+		<br>
+		<input type="submit" class="ssubmit">
+	</form>
+	<center><a href="homePage.html" class="return">Return</a></center>
+</body>
+</html>
